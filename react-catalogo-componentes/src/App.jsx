@@ -46,12 +46,12 @@ function App() {
       <div className="cabecalho">
         <Cabecalho />
       </div>
-      
+
       <main>
         <h1>Cursos</h1>
-        {cursos.map((curso, index) => (
+        {cursos.map((curso) => (
           <CardCurso
-            key={index}
+            key={curso}
             nome={curso.nome}
             duracao={curso.duracao}
             modalidade={curso.modalidade}
